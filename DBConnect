@@ -1,0 +1,29 @@
+;
+;  odbc.ini configuration for Connector/ODBC 8.1 driver
+;
+
+[ODBC Data Sources]
+myodbc8w     = MyODBC 8.1 UNICODE Driver DSN
+myodbc8a     = MyODBC 8.1 ANSI Driver DSN
+
+[myodbc8w]
+Driver       = /usr/local/lib/libmyodbc8w.so
+Description  = Connector/ODBC 8.1 UNICODE Driver DSN
+SERVER       = 127.0.0.1
+PORT         = 3306
+USER         = root
+Password     = prodpass2022
+Database     = prod
+OPTION       = 3
+SOCKET       =
+
+[myodbc8a]
+Driver       = /usr/local/lib/libmyodbc8a.so
+Description  = Connector/ODBC 8.1 ANSI Driver DSN
+SERVER       = localhost
+PORT         = 3306
+USER         = root
+Password     = qapass2022
+Database     = qa
+OPTION       = 3
+SOCKET       =
